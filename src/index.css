@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  :root,
+  .dark {
     --background: 220 25% 6%;
     --foreground: 210 20% 92%;
 
@@ -45,7 +46,6 @@
     --sidebar-border: 215 20% 18%;
     --sidebar-ring: 211 100% 50%;
 
-    /* Custom tokens */
     --navy: 220 40% 13%;
     --navy-light: 215 30% 20%;
     --navy-deep: 220 45% 8%;
@@ -60,6 +60,57 @@
     --shadow-card: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
     --shadow-glow: 0 0 40px -10px hsl(211 100% 50% / 0.3);
     --shadow-elevated: 0 20px 60px -15px hsl(0 0% 0% / 0.6);
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 220 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 10%;
+
+    --primary: 211 100% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 30% 10%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 211 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 211 100% 45%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 30% 10%;
+    --sidebar-primary: 211 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 95%;
+    --sidebar-accent-foreground: 220 30% 10%;
+    --sidebar-border: 220 15% 90%;
+    --sidebar-ring: 211 100% 45%;
+
+    --navy: 220 30% 96%;
+    --navy-light: 220 20% 92%;
+    --navy-deep: 0 0% 100%;
+    --orange-glow: 211 100% 55%;
+    --orange-dim: 211 70% 40%;
+    --glass: 0 0% 100%;
+    --glass-border: 220 15% 88%;
+
+    --shadow-card: 0 8px 32px -8px hsl(220 30% 10% / 0.08);
+    --shadow-glow: 0 0 40px -10px hsl(211 100% 45% / 0.25);
+    --shadow-elevated: 0 20px 60px -15px hsl(220 30% 10% / 0.12);
   }
 }
 
