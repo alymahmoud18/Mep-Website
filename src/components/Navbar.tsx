@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
+import mepLogo from "@/assets/mep-logo.png.asset.json";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -52,12 +53,14 @@ export const Navbar = () => {
       <nav className="container mx-auto flex items-center justify-between px-4 md:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center font-heading font-bold text-primary-foreground text-lg transition-transform duration-300 group-hover:scale-110">
-            M
-          </div>
-          <div>
+          <img
+            src={mepLogo.url}
+            alt="MEP Engineering Solutions logo"
+            className="h-10 w-auto transition-transform duration-300 group-hover:scale-110 dark:invert-0 invert"
+          />
+          <div className="hidden sm:block">
             <span className="font-heading font-bold text-foreground text-lg leading-none block">MEP</span>
-            <span className="text-muted-foreground text-xs tracking-wider">ENGINEERING</span>
+            <span className="text-muted-foreground text-[10px] tracking-[0.2em]">ENGINEERING SOLUTIONS</span>
           </div>
         </Link>
 
